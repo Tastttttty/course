@@ -1,0 +1,31 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://47.115.215.66:3306/course?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=UTC
+    username: course
+    password: 666666
+  redis:
+    host: 47.115.215.66
+    port: 6379
+    password: 123321
+    lettuce:
+      pool:
+        max-idle: 10
+        max-active: 10
+        min-idle: 1
+        time-between-eviction-runs: 10s
+  jackson:
+    default-property-inclusion: non_null #JSON处理时忽略非空字段
+
+mybatis-plus:
+  # Mapper映射文件
+  mapper-locations: classpath*:/mapper/*Mapper.xml
+  # 配置MyBatis数据返回类型别名（默认别名是类名）
+  type-aliases-package: com.course.entity
+  configuration:
+    #驼峰命名转化
+    map-underscore-to-camel-case: true
+    #在控制台自动输出执行的sql语句
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
