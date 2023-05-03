@@ -1,5 +1,5 @@
 server:
-  port: 8888
+  port: 8081
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -18,3 +18,14 @@ spring:
         time-between-eviction-runs: 10s
   jackson:
     default-property-inclusion: non_null #JSON处理时忽略非空字段
+
+mybatis-plus:
+  # Mapper映射文件
+  mapper-locations: classpath*:/mapper/*Mapper.xml
+  # 配置MyBatis数据返回类型别名（默认别名是类名）
+  type-aliases-package: com.course.entity
+  configuration:
+    #驼峰命名转化
+    map-underscore-to-camel-case: true
+    #在控制台自动输出执行的sql语句
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ee319b4b-4390-4149-9921-cdac65ae6021" name="默认的" comment="" />
+    <list default="true" id="ee319b4b-4390-4149-9921-cdac65ae6021" name="默认的" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/course/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/course/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/course/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/course/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/course/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/course/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/course/DemoApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/course/DemoApplication.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +20,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -24,16 +33,24 @@
     </option>
   </component>
   <component name="ProjectId" id="2OE9bOr0BHcV56ciHqwhzeEzptl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="新增" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/course/utils" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
@@ -43,7 +60,7 @@
       <recent name="D:\Desktop\1\course\course\src\main\java\com\course\controller" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.CodeGenerate">
+  <component name="RunManager" selected="Spring Boot.DemoApplication">
     <configuration name="CodeGenerate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CodeGenerate" />
       <module name="course" />
@@ -78,6 +95,10 @@
       <workItem from="1681571432073" duration="79000" />
       <workItem from="1681573391413" duration="517000" />
       <workItem from="1681794267456" duration="7274000" />
+      <workItem from="1682667621571" duration="3006000" />
+      <workItem from="1682749973219" duration="680000" />
+      <workItem from="1682941779414" duration="6288000" />
+      <workItem from="1683008076616" duration="2636000" />
     </task>
     <servers />
   </component>
@@ -85,30 +106,50 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="769" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1682945857628">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="769" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1682945857628" />
     <state x="809" y="292" key="FileChooserDialogImpl" timestamp="1681805479265">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="809" y="292" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1681805479265" />
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1681815655609">
+    <state width="1877" height="290" key="GridCell.Tab.0.bottom" timestamp="1682948364888">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1681815655609" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1681815655608">
+    <state width="1877" height="290" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1682948364888" />
+    <state width="1877" height="290" key="GridCell.Tab.0.center" timestamp="1682948364888">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1681815655608" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1681815655608">
+    <state width="1877" height="290" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1682948364888" />
+    <state width="1877" height="290" key="GridCell.Tab.0.left" timestamp="1682948364888">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1681815655608" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1681815655609">
+    <state width="1877" height="290" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1682948364888" />
+    <state width="1877" height="290" key="GridCell.Tab.0.right" timestamp="1682948364888">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1681815655609" />
-    <state x="457" y="166" key="SettingsEditor" timestamp="1681805484282">
+    <state width="1877" height="290" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1682948364888" />
+    <state width="1877" height="290" key="GridCell.Tab.1.bottom" timestamp="1682948364889">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="457" y="166" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1681805484282" />
+    <state width="1877" height="290" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1682948364889" />
+    <state width="1877" height="290" key="GridCell.Tab.1.center" timestamp="1682948364888">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="290" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1682948364888" />
+    <state width="1877" height="290" key="GridCell.Tab.1.left" timestamp="1682948364888">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="290" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1682948364888" />
+    <state width="1877" height="290" key="GridCell.Tab.1.right" timestamp="1682948364889">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="290" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1682948364889" />
+    <state x="457" y="166" key="SettingsEditor" timestamp="1682945034330">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="457" y="166" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1682945034330" />
     <state x="719" y="395" width="623" height="281" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1681805483708">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
