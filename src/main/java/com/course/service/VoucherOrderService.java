@@ -1,5 +1,6 @@
 package com.course.service;
 
+import com.course.dto.Result;
 import com.course.entity.VoucherOrder;
 import com.baomidou.mybatisplus.extension.service.IService;
 
@@ -13,4 +14,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface VoucherOrderService extends IService<VoucherOrder> {
 
+    Result seckillVoucher(Long voucherId);
+
+    Result createVoucherOrder(Long voucherId);
 }
