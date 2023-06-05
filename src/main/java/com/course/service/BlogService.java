@@ -1,5 +1,6 @@
 package com.course.service;
 
+import com.course.dto.Result;
 import com.course.entity.Blog;
 import com.baomidou.mybatisplus.extension.service.IService;
 
@@ -13,4 +14,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface BlogService extends IService<Blog> {
 
+    Result queryBlogById(Long id);
+
+    Result likeBlog(Long id);
 }

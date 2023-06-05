@@ -10,6 +10,7 @@ import com.course.entity.Blog;
 import com.course.entity.User;
 import com.course.utils.SystemConstants;
 import com.course.utils.UserHolder;
+import lombok.Getter;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -35,12 +36,15 @@ public class BlogController {
         return Result.ok(blog.getId());
     }
 
+    @GetMapping("/{id}")
+    public Result queryBlogById(@PathVariable("id") Long id){
+        return blogService.queryBlogById(id);
+    }
+
     @PutMapping("/like/{id}")
     public Result likeBlog(@PathVariable("id") Long id) {
-        // 修改点赞数量
-        blogService.update()
-                .setSql("liked = liked + 1").eq("id", id).update();
-        return Result.ok();
+
+        return blogService.likeBlog(id);
     }
 
     @GetMapping("/of/me")
@@ -72,4 +76,19 @@ public class BlogController {
         });
         return Result.ok(records);
     }
+
+
+    @GetMapping("/of/user")
+    public Result queryBlogByUserId(
+            @RequestParam(value = "current", defaultValue = "1") Integer current,
+            @RequestParam("id") Long id) {
+        // 根据用户查询
+        Page<Blog> page = blogService.query()
+                .eq("user_id", id).page(new Page<>(current, SystemConstants.MAX_PAGE_SIZE));
+        // 获取当前页数据
+        List<Blog> records = page.getRecords();
+        return Result.ok(records);
+    }
+
+
 }

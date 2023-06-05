@@ -12,6 +12,7 @@ import com.course.mapper.UserMapper;
 import com.course.service.UserService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.course.utils.RegexUtils;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
@@ -35,6 +36,7 @@ import static com.course.utils.SystemConstants.USER_NICK_NAME_PREFIX;
  * @since 2023-04-18
  */
 @Service
+@Slf4j
 public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements UserService {
 
     @Resource
@@ -55,6 +57,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         stringRedisTemplate.opsForValue().set(LOGIN_CODE_KEY +phone, code, LOGIN_CODE_TTL, TimeUnit.MINUTES);
         // 5.发送验证码
         log.debug("发送短信验证码成功，验证码:"+code);
+        log.info("发送短信验证码成功，验证码:"+code);
         // 返回ok
         return Result.ok();
     }
@@ -69,6 +72,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         }
         // 3.从redis中获取验证码校验
         Object cacheCode = stringRedisTemplate.opsForValue().get(LOGIN_CODE_KEY +phone);
+
         String code = loginForm.getCode();
         if(cacheCode == null || !cacheCode.equals(code)){
             //3.不一致，报错
